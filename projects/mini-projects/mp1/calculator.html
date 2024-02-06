@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="calcStyle.css">
+    <link>
+    <title>Calculator Project | Resume</title>
+    </head>
+
+    <body>
+    <div class="calculator">
+      <h1>Calculator</h1>
+      <label for="num1">Number 1:</label>
+      <input type="text" id="num1">
+
+      <label for="num2">Number 2:</label>
+      <input type="text" id="num2">
+
+      <button onclick="addition()">+</button>
+      <button onclick="subtract()">-</button>
+      <button onclick="multiply()">*</button>
+      <button onclick="divide()">/</button>
+      <button onclick="power()">**</button>
+      <button onclick="clearFields()">Clear</button>
+
+      <p id="result">Result: </p>
+    </div>
+
+      </body>
+      <script>
+        function addition(){
+          let num1 = parseFloat(document.getElementById("num1").value);
+          let num2 = parseFloat(document.getElementById("num2").value);
+  
+          let res = num1 + num2
+  
+          document.getElementById("result").innerHTML = 'Result:' + res
+        }
+        function subtract(){
+          let num1 = parseFloat(document.getElementById("num1").value);
+          let num2 = parseFloat(document.getElementById("num2").value);
+  
+          let res = num1 - num2
+  
+          document.getElementById("result").innerHTML = 'Result:' + res
+        }
+        function multiply(){
+          let num1 = parseFloat(document.getElementById("num1").value);
+          let num2 = parseFloat(document.getElementById("num2").value);
+  
+          let res = num1 * num2
+  
+          document.getElementById("result").innerHTML = 'Result:' + res
+        }
+        function divide(){
+          let num1 = parseFloat(document.getElementById("num1").value);
+          let num2 = parseFloat(document.getElementById("num2").value);
+  
+          let res = num1 / num2
+  
+          document.getElementById("result").innerHTML = 'Result:' + res
+        }
+        function power(){
+          let num1 = parseFloat(document.getElementById("num1").value);
+          let num2 = parseFloat(document.getElementById("num2").value);
+  
+          let res = num1
+  
+          for (let i = 1; i < num2;i++){
+            res *= num1
+          }
+  
+          document.getElementById("result").innerHTML = 'Result:' + res
+        }
+  
+        function clearFields(){
+          document.getElementById("num1").value = "";
+          document.getElementById("num2").value = "";
+          document.getElementById("result").innerHTML = "Result: ";
+  
+        }
+      </script>
+</html>

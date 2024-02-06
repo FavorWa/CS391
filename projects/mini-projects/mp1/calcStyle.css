@@ -1,0 +1,20 @@
+body{
+  background-color:sienna;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+h1{
+  text-align:center;
+}
+#num1{
+  background-color:wheat;
+}
+#num2{
+  background-color:wheat;
+}
+.calculator{
+  text-align: center;
+}
