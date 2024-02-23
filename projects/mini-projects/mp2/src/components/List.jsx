@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Space from './Space';
+import Space from './Space.jsx';
 
 export default function List(){
   const [space, setSpace] = useState([]);
